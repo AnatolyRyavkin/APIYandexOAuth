@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		FD6E584224B64D6D00B87266 /* APIYAndexOAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = FD6E584024B64D6D00B87266 /* APIYAndexOAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDA574C324B6520200FC96AD /* ModelForAPIYandexDictionary in Resources */ = {isa = PBXBuildFile; fileRef = FDA574C224B6520200FC96AD /* ModelForAPIYandexDictionary */; };
+		FDA574C524B6522000FC96AD /* ModelViewAuthAPIYandexDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA574C424B6522000FC96AD /* ModelViewAuthAPIYandexDictionary.swift */; };
+		FDA574C724B6522C00FC96AD /* CoordinatorOAuthAPIYandex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA574C624B6522C00FC96AD /* CoordinatorOAuthAPIYandex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FD6E583D24B64D6D00B87266 /* APIYAndexOAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APIYAndexOAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6E584024B64D6D00B87266 /* APIYAndexOAuth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIYAndexOAuth.h; sourceTree = "<group>"; };
 		FD6E584124B64D6D00B87266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDA574C224B6520200FC96AD /* ModelForAPIYandexDictionary */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ModelForAPIYandexDictionary; sourceTree = "<group>"; };
+		FDA574C424B6522000FC96AD /* ModelViewAuthAPIYandexDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelViewAuthAPIYandexDictionary.swift; sourceTree = "<group>"; };
+		FDA574C624B6522C00FC96AD /* CoordinatorOAuthAPIYandex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorOAuthAPIYandex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,9 @@
 			children = (
 				FD6E584024B64D6D00B87266 /* APIYAndexOAuth.h */,
 				FD6E584124B64D6D00B87266 /* Info.plist */,
+				FDA574C624B6522C00FC96AD /* CoordinatorOAuthAPIYandex.swift */,
+				FDA574C424B6522000FC96AD /* ModelViewAuthAPIYandexDictionary.swift */,
+				FDA574C224B6520200FC96AD /* ModelForAPIYandexDictionary */,
 			);
 			path = APIYAndexOAuth;
 			sourceTree = "<group>";
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					FD6E583C24B64D6D00B87266 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -121,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDA574C324B6520200FC96AD /* ModelForAPIYandexDictionary in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDA574C724B6522C00FC96AD /* CoordinatorOAuthAPIYandex.swift in Sources */,
+				FDA574C524B6522000FC96AD /* ModelViewAuthAPIYandexDictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +273,7 @@
 		FD6E584624B64D6D00B87266 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 92NKZ7998L;
@@ -276,6 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AnatatolyRyavkin.APIYAndexOAuth;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +299,7 @@
 		FD6E584724B64D6D00B87266 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 92NKZ7998L;
